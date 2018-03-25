@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="description" content="百度搜索框">
+  <meta charset="utf-8">
+  <title>baidu search-box</title>
+  <link rel="stylesheet" href="index.csss">
+  <style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+  </style>
+  <!-- 引用icon的通用CSS (网站有) -->
+
+
+</head>
+
+<body>
+  <div class="ct">
+    <span class="wrapper">
+      <input type="text" id="search-content"> 
+      <span class="buttons">
+        <svg class="icon mic" aria-hidden="true"> <!-- aria-hidden="true"的作用： 残障人士如失明的人使用识读设备（自动读取内容并自动播放出来），播放到带此属性的内容时会自动跳过，以免残障人士混淆！  -->
+          <use xlink:href="#icon-mic"></use>
+        </svg>
+         <span class="seperator"></span>
+        <svg class="icon" aria-hidden>
+           <use xlink:href="#icon-camera"></use>
+      <!--复制code的时候记得手动加上 #号啊，别问我为什么知道，哼！  -->
+
+        </svg>
+      </span>
+    <!-- 将两个按钮包起来方便一起处理，用span不用div的原因是用div会换行 -->
+    </span>
+
+
+    <button>百度一下</button>
+
+    <ul class="suggestion">
+      <li>选项1</li>
+      <li>选项2</li>
+      <li>选项3</li>
+      <li>选项4</li>
+    </ul>
+  </div>
+  <script src="index.js"></script>
+  <script src="//at.alicdn.com/t/font_603643_4ft3rmw0ghdoyldi.js">
+   // 引入symbol
+  </script> 
+</body>
+
+</html>

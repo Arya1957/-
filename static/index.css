@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,*::after {
+  box-sizing: border-box;
+}
+
+ul,li{
+  list-style: none;
+}
+
+body {
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.ct {
+  
+}
+
+.wrapper{
+  position: relative;
+  display: inline-block;
+  float: left; /* 加border可以看到父容器没有塌陷 */
+}
+.wrapper input[type=text]{
+  border: 1px solid #b8b8b8;
+  width: 430px;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 8px; 
+  border-right: none;
+}
+.wrapper input[type=text]:focus{
+  outline: none; /*去掉输入时的蓝色框框  */
+  border-color: #4b94fc;
+}
+
+/* 设置“百度一下”的样式 */
+
+.wrapper+button {
+  float: left; 
+  height: 32px;
+  background: #3e80eb;
+  color: #fff;
+  padding: 0 20px;
+  border: none; /*不写这一步会导致高度不一致 */
+}
+
+.wrapper+button:hover{
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0.5);
+  background: #3871f0;
+}
+.wrapper+button:focus{
+ outline: none;  /* 去掉点击“百度一下”时 button元素的outline */
+}
+.buttons {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  color: #b8b8b8;
+}
+
+.buttons svg.icon{
+  width: 20px;
+  height: 20px;
+  /* fill: #b8b8b8; 可以继承父元素的颜色 */
+  cursor: pointer;
+}
+.buttons svg.icon:hover{
+  color: #4b94fc;
+}
+
+.buttons {
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 使图标在input里垂直方向居中 */
+  margin-right: 10px;
+}
+.seperator {
+  width: 0;
+  height: 16px;
+  border-left: 1px solid #dedede;
+  margin: 0 10px;
+} /* 话筒和照相机图标中间的线  */
+
+
+.suggestion {
+  display: none; 默认隐藏 
+}
+
+.suggestion.active {
+  display: block;
+  border: 1px solid #b8b8b8;
+  border-top: none;
+}
+.suggestion.active>li {
+  padding-left: 8px;
+}
+.suggestion.active>li:hover{
+  background: #ccc;
+}
+  
+
