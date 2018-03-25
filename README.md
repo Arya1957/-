@@ -1,6 +1,7 @@
 # search-box
-仿百度搜索框
+仿百度搜索框 <br/>
 
+[预览](https://arya1957.github.io/search-box/ )
 
 ## 待改进的： 
 ###### 搜索框
