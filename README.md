@@ -12,10 +12,10 @@
 
 
 ## 一些tips
-###### 关于<button> 
-- <button> 有默认的border
-- <button> 默认会让字居中
-- 点击<button> 时，会有默认的outline，记得去掉
+###### 关于 `<button>`
+- `<button>` 有默认的border
+- `<button>` 默认会让字居中
+- 点击`<button>` 时，会有默认的outline，记得去掉
 - outline 不占据空间
 
 ###### 关于搜索框
